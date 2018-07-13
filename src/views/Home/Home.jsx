@@ -1,4 +1,5 @@
 import React from 'react';
+import { pageWithLayout } from '../../containers/page'
 
 // statless functional component
 export const Home = props => (
@@ -8,4 +9,4 @@ export const Home = props => (
 
 )
 
-export default Home;
+export default pageWithLayout(Home);
