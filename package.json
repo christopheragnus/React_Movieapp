@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start":"npm-run-all --parallel start:*",
-    "build":"npm-run-all build*",
+    "start": "npm-run-all --parallel start:*",
+    "build": "npm-run-all build*",
     "start:react": "react-scripts start",
     "start:styles": "npm run build:styles -- --watch",
     "build:styles": "./node_modules/.bin/postcss --config postcss.config.js src/styles/index.css -o src/index.css",

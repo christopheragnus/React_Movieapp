@@ -4,9 +4,9 @@ import { pageWithLayout } from '../../containers/page'
 // statless functional component
 export const Home = props => (
   <div className="home">
-    <h2>Welcome home, React friends</h2>
+    <h2>Welcome home</h2>
   </div>
 
 )
 
-export default pageWithLayout(Home);
+export default pageWithLayout(Home)

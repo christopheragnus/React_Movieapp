@@ -1,4 +1,6 @@
-body {
-    border: 1px solid red;
-    font-family: sans-serif;
-}
+@import "normalize.css";
+@import "./variables.css";
+@import "./body.css";
+@import "./container.css";
+
+@import "../components/Sidebar/Sidebar.css";
