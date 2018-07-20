@@ -7,10 +7,10 @@ const MOUNT = document.getElementById('root') // or document.querySelector('#roo
 const renderApp = Comp => ReactDOM.render(Comp, MOUNT)
 
 if (module.hot) {
-    module.hot.accept('./App', () => {
+    module.hot.accept('./routes', () => {
         //accept hot change request
         const NextRoutes = require('./routes').default
-        renderApp(<Routes />)
+        renderApp(<NextRoutes />)
     })
 }
 
