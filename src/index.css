@@ -399,8 +399,24 @@ body, #root, .app, .wrapper {
     background: linear-gradient(to bottom, rgba(75, 51, 209, 1), rgba(90, 48, 181, 1));
     padding: 25px;
     color: rgba(255, 255, 255, 1);
-    margin-right: 15px;
+    overflow-y:auto;
+    overflow-x:hidden;
 };
+
+.sidebar ul {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+    }
+
+.sidebar ul li a {
+                color:rgba(255, 255, 255, 1);
+                text-decoration:underline
+            }
+
+.sidebar ul li a.active {
+  text-decoration:none;
+}
 
 .sidebar .heading {
         font-size: 1.2em;

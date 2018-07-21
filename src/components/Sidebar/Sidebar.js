@@ -1,5 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+
+const isActive = (match, location) => {
+  return match && match.path === location.pathname
+}
 
 export const Sidebar = props => (
   <div className="sidebar">
@@ -9,8 +13,17 @@ export const Sidebar = props => (
         <section>
           <div className='heading'>Links</div>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li>
+              <NavLink to="/" 
+            isActive={isActive}>
+            Home
+            </NavLink>
+            </li>
+            <li><NavLink to="/about"
+            isActive={isActive}>
+            About
+            </NavLink>
+            </li>
           </ul>
         </section>
   </div>
